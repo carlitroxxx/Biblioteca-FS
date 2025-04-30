@@ -45,7 +45,7 @@ public class LibroRepository {
         return listaLibros.stream().filter(Libro -> Libro.getISBN().equals(isbn)).findFirst();
     }
     //9- Metodo que cuenta los libros de un año especifico
-    public Long contarPorAnio(int anio){
+    public long contarPorAnio(int anio){
         return listaLibros.stream().filter(Libro -> Libro.getAnioPublicacion() == anio).count();
     }
 
